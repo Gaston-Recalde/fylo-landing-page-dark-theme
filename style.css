@@ -247,6 +247,7 @@ a{
 
 .footer__contact{
     display: flex;
+    flex-direction: column;
     gap: 16px;
 }
 
@@ -306,6 +307,10 @@ a{
 
 .footer__img{
     height: 15px;
+}
+
+.footer__contenido{
+    padding-bottom: 75px;
 }
 
 @media (min-width:768px) {
@@ -369,6 +374,130 @@ a{
 
 @media (min-width:1280px) {
 
+    .nav{
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+    
+    .nav__logo{
+        width: 125px;
+    }
+    
+    .nav__ul{
+        font-size: 18px;
+    }
+
+    .encabezado{
+        max-width: 725px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .encabezado__img, .productive__img{
+        max-width: 725px;
+    }
+
+    .encabezado__h1{
+        max-width: 720px;
+        font-size: 36px;
+        margin: 0 auto;
+    }
+
+    .encabezado__p{
+        max-width: 650px;
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .info__contenedor{
+        max-width: 900px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+
+    .productive{
+        display: flex;
+        align-items: center;
+        max-width: 1280px;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    .productive__h3{
+        font-size: 36px;
+    }
+
+    /* .productive__div{
+        max-width: 450px;
+        margin: 0 auto;
+    } */
+
+    .section-comentario{
+        display: flex;
+        max-width: 1280px;
+        justify-content: space-around;
+        margin: 0 auto;
+        margin-bottom: 150px;
+    }
+
+    .comentario{
+        max-width: 325px;
+    }
+
+    .comentario--primero::before{
+        top: -28px;
+        left: -5px;
+        z-index: -1;
+    }
+
+    .form__input{
+        width: 60%;
+        max-width: 350px;
+        margin-right: 10px;
+    }
+
+    .button__card{
+        margin-left: 10px;
+    }
+
+    .footer__contenedor{
+        margin: 0 auto;
+        max-width: 1280px;
+    }
+
+    .footer__contenido{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-bottom: 75px;
+    }
+
+    .footer__contact{
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        width: 40%;
+    }
+
+    .footer__content{
+        max-width: 325px;
+    }
+
+    .footer__nav--div{
+        display: flex;
+        width: 28%;
+    }
+
+    .footer__nav{
+        margin-top: 0;
+        width: 50%;
+    }
+
+    .footer__social{
+        margin-top: 0;
+        width: 13%;
+    }
 }
 
 
