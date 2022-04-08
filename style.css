@@ -25,6 +25,7 @@
     /*Neutral*/
 
     --white: hsl(0, 0%, 100%);
+    --gray: hsl(0, 0%, 65%);
 }
 
 body{
@@ -38,7 +39,7 @@ body{
     justify-content: space-between;
     align-items: center;
     height: 25px;
-    color: var(--white);
+    color: var(--gray);
     margin: 25px 20px;
 }
 
@@ -53,6 +54,12 @@ body{
     list-style: none;
     font-size: 13px;
     font-family: 'Raleway';
+}
+
+.ul__li:hover{
+    cursor: pointer;
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
 }
 
 .section{
@@ -96,6 +103,11 @@ body{
     padding: 15px;
     border-radius: 50px;
     border: none;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: var(--cyan);
 }
 
 .info__contenedor{
@@ -147,9 +159,14 @@ a{
     margin-right: 10px;
 }
 
-/* .section-comentario{
-    padding
-} */
+.vinculo:hover{
+    color: var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+.vinculo__a:hover{
+    color: var(--white);
+}
 
 .section-comentario{
     padding: 0 45px;
@@ -231,7 +248,7 @@ a{
 
 .form__input{
     width: 250px;
-    color: var(--white);
+    color: var(--dark-blue-intro-email);
     padding: 15px;
     border-radius: 50px;
     border: none;
@@ -282,6 +299,10 @@ a{
     text-decoration: none;
 }
 
+.footer__a:hover{
+    font-weight: 700;
+}
+
 .footer__social{
     display: flex;
     justify-content: center;
@@ -299,6 +320,10 @@ a{
     border: 1px solid;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.footer__media:hover{
+    color: var(--cyan);
 }
 
 .footer__media--ultimo{
