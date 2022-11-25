@@ -245,6 +245,22 @@ a{
     margin-bottom: 25px;
 }
 
+.card__form{
+    position: relative;
+}
+
+.input__small{
+    display: none;
+}
+
+.email__error{
+    display: block;
+    position: absolute;
+    bottom: 48px;
+    left: 17%;
+    color: var(--light-red);
+}
+
 .form__input{
     width: 250px;
     color: var(--dark-blue-intro-email);
@@ -309,8 +325,6 @@ a{
 }
 
 .footer__media{
-    width: 30px;
-    height: 30px;
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -318,6 +332,12 @@ a{
     border: 1px solid;
     border-radius: 50%;
     margin-right: 20px;
+}
+
+.footer__media i{
+    display: flex;
+    font-size: 20px;
+    padding: 7px;
 }
 
 .footer__media:hover{
@@ -328,12 +348,29 @@ a{
     margin-right: 0;
 }
 
-.footer__img{
-    height: 15px;
-}
-
 .footer__contenido{
     padding-bottom: 75px;
+}
+
+@media screen and (min-width:500px) {
+    .card__form small{
+        bottom: 48px;
+        left: 27%;
+    }
+}
+
+@media screen and (min-width:604px) {
+    .card__form small{
+        bottom: 0;
+        left: 8%;
+    }
+}
+
+@media screen and (min-width:724px) {
+    .card__form small{
+        bottom: 0;
+        left: 15%;
+    }
 }
 
 @media (min-width:768px) {
@@ -469,6 +506,17 @@ a{
         z-index: -1;
     }
 
+    .card__form{
+        position: relative;
+    }
+
+    .card__form small{
+        position: absolute;
+        bottom: 0;
+        left: 15%;
+        color: var(--light-red);
+    }
+
     .form__input{
         width: 60%;
         max-width: 350px;
@@ -516,7 +564,11 @@ a{
         margin-top: 0;
         width: 13%;
     }
+
+    .footer__media i{
+        font-size: 24px;
+    }
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center; padding-bottom: 25px;}
 .attribution a { color: hsl(228, 45%, 44%); }
